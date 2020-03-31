@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		842412C424337B43007C93D9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 842412C324337B43007C93D9 /* main.cpp */; };
+		842412E224337DFA007C93D9 /* Unit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842412E124337DFA007C93D9 /* Unit_Tests.m */; };
+		842412E824337E5D007C93D9 /* GoogleTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 842412E724337E5D007C93D9 /* GoogleTests.mm */; };
+		842412E924337ED3007C93D9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 842412C324337B43007C93D9 /* main.cpp */; };
+		842412EC24337FB4007C93D9 /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842412CC24337C11007C93D9 /* libgtest_main.a */; };
+		842412ED24337FB4007C93D9 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842412CB24337C11007C93D9 /* libgtest.a */; };
+		842412EE24338095007C93D9 /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842412CC24337C11007C93D9 /* libgtest_main.a */; };
+		842412EF24338095007C93D9 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842412CB24337C11007C93D9 /* libgtest.a */; };
+		842412F2243380FE007C93D9 /* FizzBuzz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 842412F0243380FE007C93D9 /* FizzBuzz.cpp */; };
+		842412F324338719007C93D9 /* FizzBuzz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 842412F0243380FE007C93D9 /* FizzBuzz.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +34,16 @@
 /* Begin PBXFileReference section */
 		842412C024337B43007C93D9 /* FizzBuzz */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FizzBuzz; sourceTree = BUILT_PRODUCTS_DIR; };
 		842412C324337B43007C93D9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		842412CB24337C11007C93D9 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../GitHub/googletest/install/lib/libgtest.a; sourceTree = "<group>"; };
+		842412CC24337C11007C93D9 /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest_main.a; path = ../../GitHub/googletest/install/lib/libgtest_main.a; sourceTree = "<group>"; };
+		842412D324337D76007C93D9 /* FizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		842412DF24337DFA007C93D9 /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		842412E124337DFA007C93D9 /* Unit_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Unit_Tests.m; sourceTree = "<group>"; };
+		842412E324337DFA007C93D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		842412E724337E5D007C93D9 /* GoogleTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GoogleTests.mm; path = "../../../GitHub/xcode-googletest/Bundle/GoogleTests.mm"; sourceTree = "<group>"; };
+		842412EA24337FA3007C93D9 /* googletest */ = {isa = PBXFileReference; lastKnownFileType = folder; name = googletest; path = ../../GitHub/googletest; sourceTree = "<group>"; };
+		842412F0243380FE007C93D9 /* FizzBuzz.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FizzBuzz.cpp; sourceTree = "<group>"; };
+		842412F1243380FE007C93D9 /* FizzBuzz.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FizzBuzz.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +51,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842412EC24337FB4007C93D9 /* libgtest_main.a in Frameworks */,
+				842412ED24337FB4007C93D9 /* libgtest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842412D024337D76007C93D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842412DC24337DFA007C93D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842412EE24338095007C93D9 /* libgtest_main.a in Frameworks */,
+				842412EF24338095007C93D9 /* libgtest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +79,9 @@
 			isa = PBXGroup;
 			children = (
 				842412C224337B43007C93D9 /* FizzBuzz */,
+				842412E024337DFA007C93D9 /* Unit Tests */,
 				842412C124337B43007C93D9 /* Products */,
+				842412CA24337C11007C93D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				842412C024337B43007C93D9 /* FizzBuzz */,
+				842412D324337D76007C93D9 /* FizzBuzzTests.xctest */,
+				842412DF24337DFA007C93D9 /* Unit Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +99,30 @@
 			isa = PBXGroup;
 			children = (
 				842412C324337B43007C93D9 /* main.cpp */,
+				842412F0243380FE007C93D9 /* FizzBuzz.cpp */,
+				842412F1243380FE007C93D9 /* FizzBuzz.hpp */,
 			);
 			path = FizzBuzz;
+			sourceTree = "<group>";
+		};
+		842412CA24337C11007C93D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				842412EA24337FA3007C93D9 /* googletest */,
+				842412CC24337C11007C93D9 /* libgtest_main.a */,
+				842412CB24337C11007C93D9 /* libgtest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		842412E024337DFA007C93D9 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				842412E724337E5D007C93D9 /* GoogleTests.mm */,
+				842412E124337DFA007C93D9 /* Unit_Tests.m */,
+				842412E324337DFA007C93D9 /* Info.plist */,
+			);
+			path = "Unit Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +145,40 @@
 			productReference = 842412C024337B43007C93D9 /* FizzBuzz */;
 			productType = "com.apple.product-type.tool";
 		};
+		842412D224337D76007C93D9 /* FizzBuzzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 842412D824337D76007C93D9 /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */;
+			buildPhases = (
+				842412CF24337D76007C93D9 /* Sources */,
+				842412D024337D76007C93D9 /* Frameworks */,
+				842412D124337D76007C93D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FizzBuzzTests;
+			productName = FizzBuzzTests;
+			productReference = 842412D324337D76007C93D9 /* FizzBuzzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		842412DE24337DFA007C93D9 /* Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 842412E424337DFA007C93D9 /* Build configuration list for PBXNativeTarget "Unit Tests" */;
+			buildPhases = (
+				842412DB24337DFA007C93D9 /* Sources */,
+				842412DC24337DFA007C93D9 /* Frameworks */,
+				842412DD24337DFA007C93D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Unit Tests";
+			productName = "Unit Tests";
+			productReference = 842412DF24337DFA007C93D9 /* Unit Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +189,12 @@
 				ORGANIZATIONNAME = JZ;
 				TargetAttributes = {
 					842412BF24337B43007C93D9 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					842412D224337D76007C93D9 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					842412DE24337DFA007C93D9 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
@@ -110,9 +213,28 @@
 			projectRoot = "";
 			targets = (
 				842412BF24337B43007C93D9 /* FizzBuzz */,
+				842412D224337D76007C93D9 /* FizzBuzzTests */,
+				842412DE24337DFA007C93D9 /* Unit Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		842412D124337D76007C93D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842412DD24337DFA007C93D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		842412BC24337B43007C93D9 /* Sources */ = {
@@ -120,6 +242,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				842412C424337B43007C93D9 /* main.cpp in Sources */,
+				842412F2243380FE007C93D9 /* FizzBuzz.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842412CF24337D76007C93D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842412DB24337DFA007C93D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842412E824337E5D007C93D9 /* GoogleTests.mm in Sources */,
+				842412E224337DFA007C93D9 /* Unit_Tests.m in Sources */,
+				842412E924337ED3007C93D9 /* main.cpp in Sources */,
+				842412F324338719007C93D9 /* FizzBuzz.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,16 +311,23 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/admin/Documents/GitHub/googletest/googletest/include;
+				LIBRARY_SEARCH_PATHS = /Users/admin/Documents/GitHub/googletest/install/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -222,15 +370,22 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/admin/Documents/GitHub/googletest/googletest/include;
+				LIBRARY_SEARCH_PATHS = /Users/admin/Documents/GitHub/googletest/install/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = (
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -239,6 +394,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = /Users/admin/Documents/GitHub/googletest/googletest/include;
+				LIBRARY_SEARCH_PATHS = /Users/admin/Documents/GitHub/googletest/install/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,6 +405,77 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = /Users/admin/Documents/GitHub/googletest/googletest/include;
+				LIBRARY_SEARCH_PATHS = /Users/admin/Documents/GitHub/googletest/install/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		842412D924337D76007C93D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = personal.FizzBuzzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		842412DA24337D76007C93D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = personal.FizzBuzzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		842412E524337DFA007C93D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = "Unit Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "personal.Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		842412E624337DFA007C93D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = "Unit Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "personal.Unit-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -268,6 +497,24 @@
 			buildConfigurations = (
 				842412C824337B43007C93D9 /* Debug */,
 				842412C924337B43007C93D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		842412D824337D76007C93D9 /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				842412D924337D76007C93D9 /* Debug */,
+				842412DA24337D76007C93D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		842412E424337DFA007C93D9 /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				842412E524337DFA007C93D9 /* Debug */,
+				842412E624337DFA007C93D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
